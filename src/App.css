@@ -1,0 +1,142 @@
+
+
+
+.sombre { background-color: rgb(23, 23, 23); 
+                    color: rgb(255, 255, 255);
+}
+
+/* .clair {
+    background-color: white;
+    color: rgb(0, 0, 0);
+} */
+
+.loader{
+    position: absolute;
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.dot{
+    animation: loader infinite 0.3s alternate;
+}
+
+.dot img{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background: black;
+    margin: 0 15px;
+    animation: loader infinite 0.3s alternate;
+}
+
+@keyframes loader{
+    100% {
+        transform: translateY(-10vh)
+    }
+}
+
+.d2{
+    animation-delay: 0.08s;
+}
+
+.d3{
+    animation-delay: 0.16s;
+}
+
+
+
+#pokedex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    justify-content: space-around;
+    color: black;
+    margin: 0 0.1em;
+    width: 100%;
+    padding: 0;
+
+    font-family: fantasy;
+} 
+
+#pokedex div{
+        max-width: fit-content;
+        background-color: rgb(196, 196, 196);
+        margin:0.2em;
+        border-radius: 0.5em;
+        justify-content: space-around ;
+        justify-items:  center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        max-height: fit-content;
+        box-shadow: inset 0.1em 0.1em rgba(0, 0, 0, 0.274),
+                inset 1px 3px 5px 0 #00000069, 
+                inset 0 15px 10px 0px #ccc,
+             inset 0 9px 5px 0px #fff;
+}
+
+#nbrPoke{
+
+    color: rgb(182, 182, 182);
+    background-color: black;
+    border-radius: 0.3em;
+    width: fit-content;
+
+    margin: 0 1em;
+    padding: 0 1em;
+}
+
+#pokedex p, h2,h3{
+    display: flex;
+    padding: 0 1em;
+
+}
+
+#imgPoke{
+    background-color: rgb(58, 58, 58);
+    max-width: 300px;
+    justify-content: space-around;
+    padding: 0 1em;
+    box-shadow: inset 0.1em 0.1em rgba(255, 255, 255, 0.774),
+                inset 0em -8em rgba(45, 45, 45, 0.114),
+                inset 0em -5em rgba(45, 45, 45, 0.263),
+                inset 0em -2em rgba(45, 45, 45, 0.208),
+                inset 0em -1em rgba(45, 45, 45, 0.295),
+                inset 0em -0.5em rgba(45, 45, 45, 0.614),
+                10px 1em 1em rgba(0, 0, 0, 0.126);
+    border-radius: 0.3em;
+    border-color: #000000;
+
+    object-fit: contain;
+}
+
+#imgType{
+    max-height: 1.5em;
+    justify-items: flex-end;
+    margin-left: 0.5em;
+}
+
+#types{
+    display: inline-flex;
+    justify-items: flex-end;
+    margin-left: 1em;
+
+}
+
+#stats span{
+    margin: 0 0.4em;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background-color: rgba(240, 248, 255, 0.333);
+}
+
+#name{
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
+    background-color: rgba(240, 248, 255, 0.333);
+}
